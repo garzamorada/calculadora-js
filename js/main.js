@@ -29,6 +29,11 @@ class FuncionesCalculadora {
     delete() {}
 
     muestraResultado() {
+        let texto = String(this.displayContent);
+        this.formula = texto.replaceAll(',', '.').replaceAll('x', '*');
+        this.resultado = eval(this.formula)
+        this.displayContent = this.resultado
+        botonera.display.innerText = this.displayContent;
 
     }
 }

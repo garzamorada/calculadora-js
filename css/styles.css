@@ -1,7 +1,7 @@
 #calculadora {
     width: 300px;
     display: grid;
-    grid-template-areas: "display display display display" "abre cierra delete suma" "num_1 num_2 num_3 resta" "num_4 num_5 num_6 multip" "num_7 num_8 num_9 divis" "num_0 coma igual reset";
+    grid-template-areas: "display display display display" "abre cierra delete reset" "num_1 num_2 num_3 suma" "num_4 num_5 num_6 resta" "num_7 num_8 num_9 multip" "num_0 coma igual divis";
     justify-content: space-evenly;
     background-color: #333333;
     padding: 10px;
