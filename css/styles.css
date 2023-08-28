@@ -4,16 +4,19 @@
     grid-template-areas: "display display display display" "abre cierra delete suma" "num_1 num_2 num_3 resta" "num_4 num_5 num_6 multip" "num_7 num_8 num_9 divis" "num_0 coma igual reset";
     justify-content: space-evenly;
     background-color: #333333;
-    padding: 5px;
+    padding: 10px;
     border: solid 1px black;
     border-radius: 5px;
 }
 
 #display {
     grid-area: display;
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     height: 75px;
-    font-size: 14px;
+    font-size: 18px;
     background-color: black;
     color: yellowgreen;
     border: yellowgreen 1px solid;
