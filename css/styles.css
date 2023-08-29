@@ -1,15 +1,18 @@
 #calculadora {
     width: 300px;
+    max-width: 300px;
+    overflow: hidden;
     display: grid;
     grid-template-areas: "display display display display" "abre cierra delete reset" "num_1 num_2 num_3 suma" "num_4 num_5 num_6 resta" "num_7 num_8 num_9 multip" "num_0 coma igual divis";
     justify-content: space-evenly;
     background-color: #333333;
-    padding: 10px;
+    padding: 5px;
     border: solid 1px black;
     border-radius: 5px;
 }
 
 #display {
+    max-width: 220px;
     grid-area: display;
     display: flex;
     justify-content: center;
@@ -22,6 +25,7 @@
     border: yellowgreen 1px solid;
     border-radius: 5px;
     margin: 5%;
+    word-break: break-all
 }
 
 #calculadora button {

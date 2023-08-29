@@ -26,15 +26,17 @@ class FuncionesCalculadora {
         botonera.display.innerText = this.displayContent;
     }
 
-    delete() {}
+    delete() {
+        this.displayContent = this.displayContent.slice(0, this.displayContent.length - 1);
+        botonera.display.innerText = this.displayContent
+    }
 
     muestraResultado() {
         let texto = String(this.displayContent);
         this.formula = texto.replaceAll(',', '.').replaceAll('x', '*');
         try {
-            this.resultado = eval(this.formula)
-        }
-        catch (err) {
+            this.resultado = String(eval(this.formula))
+        } catch (err) {
             this.resultado = err.message;
         }
         this.displayContent = this.resultado
